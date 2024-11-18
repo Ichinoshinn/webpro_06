@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>誕生月占い結果</title>
+</head>
+
+<body>
+  <h1>誕生月占い</h1>
+  <% if (birthMonth) { %>
+    <p>あなたの誕生月: <%= birthMonth %>月</p>
+    <p>占い結果: <strong><%= fortune %></strong></p>
+  <% } else { %>
+    <p>誕生月が選択されていません。</p>
+  <% } %>
+  <a href="/">戻る</a>
+</body>
+</html>

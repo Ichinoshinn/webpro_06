@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>結果</title>
+</head>
+<body>
+  <h1>結果</h1>
+  <% if (name && age) { %>
+    <p>こんにちは、<%= name %>さん！あなたは<%= age %>歳です。</p>
+    <% if (age < 20) { %>
+      <p>まだ若いですね！</p>
+    <% } else if (age >= 20 && age < 50) { %>
+      <p>大人の時間を楽しんでいますね。</p>
+    <% } else { %>
+      <p>人生の経験が豊富ですね！</p>
+    <% } %>
+  <% } else { %>
+    <p>正しい情報が送信されていません。</p>
+  <% } %>
+<a href="/form">戻る</a>
+</body>
+</html>
